@@ -1,114 +1,99 @@
-Task Manager App
-This is a React-based Task Manager application that allows users to add tasks, filter them by tags, and manage their to-do list efficiently. The app is designed to demonstrate the use of Lists and Keys in React, along with state management and event handling.
+# Task Manager App
 
-Features
-Add Tasks: Users can add tasks by entering a task description and selecting a tag.
+## Overview
+The **Task Manager App** is a React-based application that enables users to efficiently manage their to-do list. Users can add tasks, filter them by tags, and maintain a structured task list with dynamic updates. This project demonstrates the use of Lists and Keys in React, along with state management and event handling.
 
-Filter Tasks: Tasks can be filtered by clicking on specific tags.
+## Features
+- **Add Tasks**: Users can add tasks by entering a task description and selecting a tag.
+- **Filter Tasks**: Tasks can be filtered by clicking on specific tags.
+- **Responsive Design**: Works seamlessly across different screen sizes.
+- **Dynamic Updates**: The task list updates instantly as tasks are added or filtered.
 
-Responsive Design: The app is designed to work seamlessly across different screen sizes.
+## Live Demo
+[View Live Demo](https://mtaskmanagerm.ccbp.tech)
 
-Dynamic Updates: The task list updates dynamically as tasks are added or filtered.
-
-Live Demo
-View Live Demo (Add your live demo link here once deployed)
-
-Screenshots
 ## Screenshots
+<details>
+<summary>Click to view</summary>
 
-### No Tasks View
-![No Tasks View](https://raw.githubusercontent.com/your-username/task-manager/main/screenshots/no-tasks-view.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Tasks View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output-no-tasks-view.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Filter View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output-filter-view.png)
 
-### Tasks View
-![Tasks View](https://raw.githubusercontent.com/your-username/task-manager/main/screenshots/tasks-view.png)
+</details>
 
-### Filtered Tasks View
-![Filtered Tasks View](https://raw.githubusercontent.com/your-username/task-manager/main/screenshots/filtered-tasks-view.png)
+## Installation
 
-Installation
-Clone the repository:
-
-bash
-Copy
+### Clone the Repository:
+```bash
 git clone https://github.com/your-username/task-manager.git
-Navigate to the project directory:
+```
 
-bash
-Copy
+### Navigate to the Project Directory:
+```bash
 cd task-manager
-Install dependencies:
+```
 
-bash
-Copy
+### Install Dependencies:
+```bash
 npm install
-Start the development server:
+```
 
-bash
-Copy
+### Start the Development Server:
+```bash
 npm start
-Open your browser and visit http://localhost:3000 to view the app.
+```
 
-Functionality
-Initial State:
+Open your browser and visit **[http://localhost:3000](http://localhost:3000)** to view the app.
 
-The task list and input fields are empty.
+## Functionality
+### Initial State:
+- The task list and input fields are empty.
+- The first tag in the `tagsList` is selected by default.
 
-The first tag in the tagsList is selected by default.
+### Adding a Task:
+1. Users can enter a task description and select a tag.
+2. Clicking the "Add Task" button adds the task to the list.
+3. The input fields are reset after adding a task.
 
-Add Task:
+### Filtering Tasks:
+- Clicking on a tag filters the tasks based on the selected tag.
+- If no tag is selected, all tasks are displayed.
 
-Users can enter a task description and select a tag.
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **UUID**: A package for generating unique task IDs.
+- **CSS**: For styling the components.
+- **HTML**: For structuring the app.
 
-Clicking the "Add Task" button adds the task to the list.
+## Color Palette
+| Color       | Hex Code  |
+|------------|----------|
+| Background | #131213  |
+| Accent     | #f3aa4e  |
+| Light Gray | #f1f5f9  |
+| Dark Gray  | #64748b  |
+| White      | #ffffff  |
+| Black      | #000000  |
 
-The input fields are reset after adding a task.
+## Font
+- **Roboto**: The primary font used throughout the app.
 
-Filter Tasks:
+## Important Notes
+- Use the `uuid` package to generate unique IDs for tasks.
+- Ensure the app is fully responsive for all screen sizes.
 
-Clicking on a tag filters the tasks based on the selected tag.
+## Contributing
+Contributions are welcome! Follow these steps to contribute:
+1. **Fork** the repository.
+2. **Create a new branch** for your feature or bugfix.
+3. **Commit** your changes.
+4. **Push** your branch.
+5. **Submit a Pull Request.**
 
-If no tag is selected, all tasks are displayed.
+## License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-
-
-Technologies Used
-React: A JavaScript library for building user interfaces.
-
-UUID: A package for generating unique IDs for tasks.
-
-CSS: For styling the components.
-
-HTML: For structuring the app.
-
-Colors
-Color	Hex Code
-Background	#131213
-Accent	#f3aa4e
-Light Gray	#f1f5f9
-Dark Gray	#64748b
-White	#ffffff
-Black	#000000
-Font
-Roboto: The primary font used throughout the app.
-
-Important Notes
-Use the uuid package to generate unique IDs for tasks.
-
-Ensure the app is responsive and works well on all screen sizes.
-
-Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-
-Fork the repository.
-
-Create a new branch for your feature or bugfix.
-
-Commit your changes.
-
-Push your branch and submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-This README file provides a comprehensive overview of the project, including installation instructions, functionality, and project structure. You can update it further with additional details or links as needed.
+---
+This README provides a detailed overview of the project, including installation instructions, functionality, and project structure. Feel free to update it with additional details as needed.
 
