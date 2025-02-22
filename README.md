@@ -10,7 +10,7 @@ The **Task Manager App** is a React-based application that enables users to effi
 - **Dynamic Updates**: The task list updates instantly as tasks are added or filtered.
 
 ## Live Demo
-[View Live Demo](https://mtaskmanagerm.ccbp.tech)
+[View Live Demo](https://mtaskmanagers.ccbp.tech)
 
 ## Screenshots
 <details>

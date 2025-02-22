@@ -3,13 +3,17 @@ import {v4 as uuidv4} from 'uuid'
 import './index.css'
 
 class Tasks extends Component {
-  state = {task: '', tag: 'Health', taskList: [], selectedTag: ''}
+  state = {task: '', tag: 'HEALTH', taskList: [], selectedTag: ''}
 
   onSubmitForm = event => {
     event.preventDefault()
     const {task, tag} = this.state
     console.log(task)
     console.log(tag)
+    if (!task.trim()) {
+      alert('Task cannot be empty. Please enter a task.')
+      return
+    }
     const newTask = {
       id: uuidv4(),
       task,
@@ -18,12 +22,12 @@ class Tasks extends Component {
     this.setState(prevState => ({
       taskList: [...prevState.taskList, newTask],
       task: '',
-      tag: '',
+      tag: 'HEALTH',
     }))
   }
 
   onClickButton = event => {
-    const selectedTag = event.target.textContent
+    const selectedTag = event.target.value
     this.setState({selectedTag})
   }
 
@@ -88,6 +92,7 @@ class Tasks extends Component {
                   selectedTag === each.displayText ? 'active-button' : ''
                 }`}
                 key={each.optionId}
+                value={each.optionId}
                 onClick={this.onClickButton}
               >
                 {each.displayText}
