@@ -1,0 +1,529 @@
+/* * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.tasks-bg-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks-container {
+  background-color: #1a171d;
+  width: 100%;
+  min-height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-heading {
+  font-family: 'Roboto';
+  color: #f3aa4e;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tasks-form-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+label {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.input-field {
+  margin-top: 6px;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 14px;
+  padding-left: 6px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.add-button {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #f3aa4e;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.tasks-list-container {
+  background-color: #000000;
+  min-height: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags-list-buttons-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tags-list-heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.tag-buttons {
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid #f3aa4e;
+  border-radius: 24px;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tasks-list-tasks-section {
+  margin-top: 20px;
+}
+
+.task-list-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  background-color: #1a171d;
+  padding: 10px;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-item {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+.tag-item {
+  background-color: #f3aa4e;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.active-button {
+  background-color: #f3aa4e;
+}
+
+.no-task-heading {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .tasks-bg-container {
+    flex-direction: row;
+  }
+
+  .tasks-container {
+    width: 30%;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+
+  .tasks-heading {
+    font-size: 28px;
+  }
+
+  .tasks-form-container {
+    padding: 30px;
+  }
+
+  .input-container {
+    margin-top: 30px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .input-field {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .add-button {
+    height: 45px;
+    width: 60%;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .tasks-list-container {
+    width: 70%;
+    min-height: 100vh;
+    padding: 30px;
+  }
+
+  .tags-list-heading {
+    font-size: 28px;
+  }
+
+  .tag-buttons {
+    height: 45px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .task-item {
+    font-size: 16px;
+  }
+
+  .tag-item {
+    font-size: 14px;
+    width: 120px;
+    height: 32px;
+  }
+
+  .no-task-heading {
+    font-size: 28px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tasks-container {
+    width: 25%;
+  }
+
+  .tasks-list-container {
+    width: 75%;
+  }
+
+  .tasks-heading {
+    font-size: 32px;
+  }
+
+  .tags-list-heading {
+    font-size: 32px;
+  }
+
+  .no-task-heading {
+    font-size: 32px;
+  }
+} */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.tasks-bg-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks-container {
+  background-color: #1a171d;
+  width: 100%;
+  min-height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-heading {
+  font-family: 'Roboto';
+  color: #f3aa4e;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tasks-form-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+label {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.input-field {
+  margin-top: 6px;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 14px;
+  padding-left: 6px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.add-button {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #f3aa4e;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.tasks-list-container {
+  background-color: #000000;
+  min-height: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags-list-buttons-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tags-list-heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.tag-buttons {
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid #f3aa4e;
+  border-radius: 24px;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tasks-list-tasks-section {
+  margin-top: 20px;
+}
+
+.task-list-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  background-color: #1a171d;
+  padding: 10px;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-item {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+.tag-item {
+  background-color: #f3aa4e;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.active-button {
+  background-color: #f3aa4e;
+}
+
+.no-task-heading {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .tasks-bg-container {
+    flex-direction: row;
+  }
+
+  .tasks-container {
+    width: 30%;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+
+  .tasks-heading {
+    font-size: 28px;
+  }
+
+  .tasks-form-container {
+    padding: 30px;
+  }
+
+  .input-container {
+    margin-top: 30px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .input-field {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .add-button {
+    height: 45px;
+    width: 60%;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .tasks-list-container {
+    width: 70%;
+    min-height: 100vh;
+    padding: 30px;
+  }
+
+  .tags-list-heading {
+    font-size: 28px;
+  }
+
+  .tag-buttons {
+    height: 45px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .task-item {
+    font-size: 16px;
+  }
+
+  .tag-item {
+    font-size: 14px;
+    width: 120px;
+    height: 32px;
+  }
+
+  .no-task-heading {
+    font-size: 28px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tasks-container {
+    width: 25%;
+  }
+
+  .tasks-list-container {
+    width: 75%;
+  }
+
+  .tasks-heading {
+    font-size: 32px;
+  }
+
+  .tags-list-heading {
+    font-size: 32px;
+  }
+
+  .no-task-heading {
+    font-size: 32px;
+  }
+}
